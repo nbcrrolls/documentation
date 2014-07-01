@@ -9,8 +9,8 @@ Current release management Status
 ------------------------------------
 
 + No current release schedule.
-+ Use of differnt repositories  by different groups
-+ No formal process, ad-hoc by different groups
++ Use of differnt repositories by different groups
++ No formal process, ad-hoc management by different groups
 
 
 Proposed
