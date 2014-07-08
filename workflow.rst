@@ -6,10 +6,10 @@ Workflow documentation requirements
 
 For hosting the workflow on NBCR website each workflow must have the following documentation: 
 
-    #. In plaintext, using the approved template, a general description of the workflow, a list of parameters, 
-       and a description of the workflow's usage.
-    #. A JPEG image of the workflow
-    #. And, a list of keywords for the workflow.
+#. In plaintext, using the approved template, a general description of the workflow, a list of parameters, 
+   and a description of the workflow's usage.
+#. A JPEG image of the workflow
+#. And, a list of keywords for the workflow.
 
 Additional documentation should be provided in the download files. Keywords should include the scientific 
 uses of the workflow and composite actors used in the workflow.
