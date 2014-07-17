@@ -4,10 +4,10 @@
 Workflow documentation requirements
 ------------------------------------
 
-For hosting the workflow on NBCR website each workflow must have the following files: 
-
 #. **Required files**
 
+   For hosting the workflow on NBCR website each workflow must have the following files: 
+   
    + workflow PNG image 
    + workflow kar file 
    + text file "description" which contains a describing  of the workflow. 
@@ -18,7 +18,7 @@ For hosting the workflow on NBCR website each workflow must have the following f
    + Optional: any extra files (documentation, examples, etc.) that will
      be distributed with the workflow. Must be listed in README. 
 
-#. **Description file format**
+#. **File "description-template" format**
 
    This file consists of a description of a worflow as  key-value pairs.  Keywords are ordered one per line followed by 
    keyword values.  Values can have multiple lines. The following keywords are required:
@@ -31,9 +31,9 @@ For hosting the workflow on NBCR website each workflow must have the following f
    + **Tag** a list of tags separated by spaces. A tag can be a software namew used in
      the workflow (for example, Amber) or a generic description of some part of
      the workflow (for example: trajectory, minimization, etc.)
-   + **Type** type of a workflow. Valid values are Clustering, Docking, Electrostatic,
-      MDsimulation, Utilities. More values will be added when more workflows
-      are created.
+   + **Type**  of a workflow. Valid values are Clustering, Docking, Electrostatic,
+     MDsimulation, Utilities. More values will be added when more workflows
+     are created.
    + **Director** a kepler director. Valid values: DDF, DDP, PN, SDF. Can be only one director.
    + **Actor** list of actors used in the workflow (names separated bhy spaces). Default value is none
    + **Purpose**  short description of what this workflow does.
@@ -84,3 +84,19 @@ Workflows are distributed as tar.gz files which must contain :
 + any optional files (extra documentation or examples) 
 
 Naming convention: WorkflowName_1.2.tar.gz 
+
+File "workflow-list" 
+------------------------
+
+This file keeps track of the names for workflows, actors, types and tags.
+Please ocnsult this file when creating new workflows and update accordingly
+when creating new workflows.
+
+Adding a new workflow
+------------------------
+
++ create a directory either in workflows/ or actors/ 
++ in the *workflow-list*
+
+   - add workflow name 
+   - add new tags or types (if any) 
