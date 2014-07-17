@@ -4,35 +4,54 @@
 Workflow documentation requirements
 ------------------------------------
 
-For hosting the workflow on NBCR website each workflow must have the following documentation: 
+For hosting the workflow on NBCR website each workflow must have the following files: 
 
-#. In plaintext, using the approved template, a general description of the workflow, a list of parameters, 
-   and a description of the workflow's usage.
-#. A JPEG image of the workflow
-#. And, a list of keywords for the workflow.
+#. **Required files**
 
-Additional documentation should be provided in the download files. Keywords should include the scientific 
-uses of the workflow and composite actors used in the workflow.
+   + workflow PNG image 
+   + workflow kar file 
+   + text file "description" which contains a describing  of the workflow. 
+     Please  see a *description-template* file for a file format and the explanation of 
+     the keywords and content. 
+   + README file with any additional information about the workflow.
+     If there are any extra files intended for download with the workflow  
+     they must be listed in README. 
+   + Optional: any extra files (documentation, examples, etc.) that will
+     be distributed with the workflow. Must be listed in README. 
 
-Workflow versioning requirements
----------------------------------
+#. **Versioning convention**
 
-NBCR distributed workflows are required to use the following versioning method:
+   Each workflow must have a unique version number which is a sequence-based identifier
+   in the form of **major.minor[.revision]**:
 
-Workflow_name.a.b.extension (ex docking_workflow.1.2.tar)
+   + **major** number is increased when there are significant jumps in functionality
+   + **minor** number is incremented when only minor features or significant fixes have been added 
+   + **revision** number is incremented when minor bugs are fixed. 
 
-a - this is the primary version number of the workflow. This must be an ascending number with no leading zeros.  
-The primary version number represents significant changes in the underlying workflow. This includes but is not 
-limited to changes in I/O file format, significant reconfiguration of the actors, or external program dependencies. 
-Primary version numbers are not required to be backwards compatible.
+#. **Naming convention**
 
-b - this is the patch version number of the workflow. This must be an ascending number with no leading zeros.  
-The patch version represents small modifications to the code that do not change I/O formats or external program 
-dependencies. Patch versions should be compatible within the primary version number. 
+   Each workflow name includes a text written as upper **CamelCase** followed
+   by a **_** and a version.  For example: LigandSimulation_1.2.3. 
+   
 
-Workflow download file requirements
+#. **Example**
+
+   The workflow for ligand simulation will have the following files:
+
+   + LigandSimulation_1.2.3.kar
+   + LigandSimulation_1.2.3.png
+   + description
+   + README
+   + LigandSimulation_1.2.3.notes (optional file)
+
+
+Workflow distribution requirements
 ------------------------------------
 
-Workflows will be distributed as tar files containing a minimum of the workflow .car file and a file containing the 
-documentation. Both the workflow .car file and the .tar file must use the naming convention with versioning described 
-above.
+Workflows are distributed as tar.gz files which must contain : 
+
++ workflow kar file 
++ README file
++ any optional files (extra documentation or examples) 
+
+Naming convention: WorkflowName_1.2.tar.gz 
