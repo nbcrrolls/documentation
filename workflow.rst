@@ -4,10 +4,10 @@
 Workflow documentation requirements
 ------------------------------------
 
-For hosting the workflow on NBCR website each workflow must have the following files: 
-
 #. **Required files**
 
+   For hosting the workflow on NBCR website each workflow must have the following files: 
+   
    + workflow PNG image 
    + workflow kar file 
    + text file "description" which contains a describing  of the workflow. 
@@ -18,7 +18,7 @@ For hosting the workflow on NBCR website each workflow must have the following f
    + Optional: any extra files (documentation, examples, etc.) that will
      be distributed with the workflow. Must be listed in README. 
 
-#. **Description file format**
+#. **"Description" file format**
 
    This file consists of a description of a worflow as  key-value pairs.  Keywords are ordered one per line followed by 
    keyword values.  Values can have multiple lines. The following keywords are required:
