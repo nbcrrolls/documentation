@@ -31,9 +31,9 @@ For hosting the workflow on NBCR website each workflow must have the following f
    + **Tag** a list of tags separated by spaces. A tag can be a software namew used in
      the workflow (for example, Amber) or a generic description of some part of
      the workflow (for example: trajectory, minimization, etc.)
-   + **Type** type of a workflow. Valid values are Clustering, Docking, Electrostatic,
-      MDsimulation, Utilities. More values will be added when more workflows
-      are created.
+   + **Type**  of a workflow. Valid values are Clustering, Docking, Electrostatic,
+     MDsimulation, Utilities. More values will be added when more workflows
+     are created.
    + **Director** a kepler director. Valid values: DDF, DDP, PN, SDF. Can be only one director.
    + **Actor** list of actors used in the workflow (names separated bhy spaces). Default value is none
    + **Purpose**  short description of what this workflow does.
