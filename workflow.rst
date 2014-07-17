@@ -11,13 +11,42 @@ For hosting the workflow on NBCR website each workflow must have the following f
    + workflow PNG image 
    + workflow kar file 
    + text file "description" which contains a describing  of the workflow. 
-     Please  see a *description-template* file for a file format and the explanation of 
-     the keywords and content. 
+     Please see a  a section describing the file format below and an example *description-template* file.
    + README file with any additional information about the workflow.
      If there are any extra files intended for download with the workflow  
      they must be listed in README. 
    + Optional: any extra files (documentation, examples, etc.) that will
      be distributed with the workflow. Must be listed in README. 
+
+#. **Description file format**
+
+   This file consists of a description of a worflow as  key-value pairs.  Keywords are ordered one per line followed by 
+   keyword values.  Values can have multiple lines. The following keywords are required:
+
+   + **Name**  workflow name in upper camel case. No dashed or spaces.
+   + **Version**  workflow version
+   + **Class**  actor or workflow
+   + **Kar**  kar file name
+   + **Image** image file name
+   + **Tag** a list of tags separated by spaces. A tag can be a software namew used in
+     the workflow (for example, Amber) or a generic description of some part of
+     the workflow (for example: trajectory, minimization, etc.)
+   + **Type** type of a workflow. Valid values are Clustering, Docking, Electrostatic,
+      MDsimulation, Utilities. More values will be added when more workflows
+      are created.
+   + **Director** a kepler director. Valid values: DDF, DDP, PN, SDF. Can be only one director.
+   + **Actor** list of actors used in the workflow (names separated bhy spaces). Default value is none
+   + **Purpose**  short description of what this workflow does.
+   + **Required software** description of the prerequisite software. Can be 1 or more
+     lines, one software item per line. If no software is required the value is none.
+   + **Parameters** description of worflow parameters, one parameter per paragraph.
+     Each description starts with a parameter short name followed by
+     the explanation text of wht this parameter does. Note text alignment.
+   + **Overview** any addition information about the workflow specifics. Default value is none
+   + **Usage** a short description of how to use the workflow
+
+   See an example *description-template* file.
+
 
 #. **Versioning convention**
 
