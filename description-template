@@ -1,5 +1,5 @@
 Name 
-    CreateDirectoryCopy_
+    CreateDirectoryCopy
 Version 
     1.0.3
 Class 
@@ -21,8 +21,8 @@ Purpose
     file names and copies the pdb files to corresponding new directories. 
 Required Software: 
     Kepler2.4 or above
-	AmberTools 12
-	OpalToolkit 2.4
+    AmberTools 12
+    OpalToolkit 2.4
 Parameters: 
     d  directory where the pdb files are located and where the new directories will be created.
 
